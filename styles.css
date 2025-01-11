@@ -64,10 +64,10 @@ nav a {
 
 .hero {
     min-height: 100vh;
-    padding: 9rem 2rem 4rem;
-    background: linear-gradient(to bottom, #000, #111);
+    padding: 9rem 2rem 8rem;
+    background-color: var(--color-white);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     text-align: center;
 }
 
@@ -80,7 +80,7 @@ nav a {
 .hero h1 {
     font-size: 4rem;
     font-weight: 700;
-    background: linear-gradient(to right, #fff, #f5f5f7);
+    background: linear-gradient(to right, #000, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
@@ -89,14 +89,14 @@ nav a {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: #86868b;
+    color: var(--color-text-secondary);
     margin-bottom: 2rem;
     line-height: 1.4;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #86868b;
+    color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0 auto 3rem;
     line-height: 1.6;
@@ -108,6 +108,7 @@ nav a {
     margin: 0 auto;
     position: relative;
     padding: 0 2rem;
+    z-index: 2;
 }
 
 .hero-image img {
@@ -122,7 +123,9 @@ nav a {
     justify-content: center;
     gap: 8rem;
     padding: 8rem 2rem;
-    background: #f5f5f7;
+    background: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .highlight-item {
@@ -131,27 +134,28 @@ nav a {
 
 .highlight-item h2 {
     font-size: 3.5rem;
-    color: #1d1d1f;
+    color: var(--color-dark);
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 .highlight-item p {
-    color: #86868b;
+    color: var(--color-text-secondary);
     font-size: 1.1rem;
 }
 
 .features {
-    padding: 8rem 2rem;
-    background: linear-gradient(to bottom, #111, #000);
-    color: white;
+    padding: var(--section-spacing) 2rem;
+    background: #fff;
+    color: var(--color-text);
     text-align: center;
+    position: relative;
 }
 
 .features h2 {
     font-size: 3.5rem;
     margin-bottom: 4rem;
-    background: linear-gradient(to right, #fff, #f5f5f7);
+    background: linear-gradient(to right, #000, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -195,13 +199,13 @@ nav a {
 .feature-item h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #f5f5f7;
+    color: var(--color-text);
     font-weight: 600;
 }
 
 .feature-item p {
     font-size: 1.1rem;
-    color: #86868b;
+    color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
@@ -223,8 +227,10 @@ nav a {
 }
 
 .testimonials {
-    padding: 8rem 2rem;
-    background: #f5f5f7;
+    padding: var(--section-spacing) 2rem;
+    background: var(--color-light);
+    color: var(--color-text);
+    position: relative;
 }
 
 .testimonials h2 {
@@ -252,7 +258,7 @@ nav a {
 .testimonial-card > p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #1d1d1f;
+    color: var(--color-text);
     margin-bottom: 2rem;
 }
 
@@ -270,10 +276,11 @@ nav a {
 }
 
 .cta-section {
-    padding: 8rem 2rem;
+    padding: var(--section-spacing) 2rem;
     text-align: center;
-    background: #000;
-    color: white;
+    background: #fff;
+    color: var(--color-text);
+    position: relative;
 }
 
 .cta-section h2 {
@@ -283,7 +290,7 @@ nav a {
 
 .cta-section p {
     font-size: 1.2rem;
-    color: #86868b;
+    color: var(--color-text-secondary);
     margin-bottom: 2rem;
 }
 
@@ -321,8 +328,9 @@ nav a {
 
 footer {
     padding: 2rem;
-    background: #f5f5f7;
+    background: var(--color-light);
     border-top: 1px solid #d2d2d7;
+    color: var(--color-light);
 }
 
 .footer-content {
@@ -339,13 +347,13 @@ footer {
 }
 
 .footer-links a {
-    color: #86868b;
+    color: var(--color-text-secondary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #1d1d1f;
+    color: var(--color-text);
 }
 
 @media (max-width: 768px) {
@@ -673,10 +681,11 @@ footer {
 }
 
 .main-features {
-    padding: 12rem 2rem;
-    background: linear-gradient(to bottom, #000, #111);
+    padding: var(--section-spacing) 2rem;
+    background: var(--color-light);
     color: white;
     overflow: hidden;
+    position: relative;
 }
 
 .feature-showcase {
@@ -698,7 +707,7 @@ footer {
     font-size: 4.5rem;
     line-height: 1.1;
     margin-bottom: 2rem;
-    background: linear-gradient(to right, #fff, #f5f5f7);
+    background: linear-gradient(to right, #000, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -706,7 +715,7 @@ footer {
 
 .feature-text p {
     font-size: 1.5rem;
-    color: #86868b;
+    color: var(--color-text-secondary);
     line-height: 1.6;
     margin-bottom: 3rem;
     max-width: 500px;
@@ -790,4 +799,130 @@ footer {
     .feature-image:hover {
         transform: translateY(-20px);
     }
+}
+
+/* Definimos un esquema de colores base */
+:root {
+    --color-dark: #000;
+    --color-text: #1d1d1f;
+    --color-text-secondary: #86868b;
+    --color-white: #fff;
+    --section-spacing: 12rem;
+}
+
+/* Fondo base de la página */
+body {
+    background-color: var(--color-white);
+}
+
+/* Todas las secciones con fondo blanco */
+.hero,
+.highlights,
+.main-features,
+.features,
+.testimonials,
+.cta-section,
+footer {
+    background-color: var(--color-white);
+}
+
+/* Ajustamos los colores de texto en el hero para mantener contraste */
+.hero {
+    color: var(--color-text);
+}
+
+/* Ajustamos las cards de testimonios */
+.testimonial-card {
+    background: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e5e5;
+}
+
+/* Ajustamos el footer */
+footer {
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Quitamos los overlays y gradientes */
+section::before,
+section::after {
+    display: none;
+}
+
+/* Navegación */
+nav a, 
+.nav-download,
+.search-icon,
+.search-close,
+.search-input,
+.brand-button a {
+    color: var(--color-text);
+}
+
+/* Hero section */
+.hero h1 {
+    background: linear-gradient(to right, #000, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle,
+.hero-description {
+    color: var(--color-text-secondary);
+}
+
+/* Features */
+.features {
+    color: var(--color-text);
+}
+
+.features h2,
+.feature-text h2 {
+    background: linear-gradient(to right, #000, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-item h3 {
+    color: var(--color-text);
+}
+
+.feature-item p,
+.feature-text p {
+    color: var(--color-text-secondary);
+}
+
+/* Testimonials */
+.testimonials {
+    color: var(--color-text);
+}
+
+.testimonial-card > p {
+    color: var(--color-text);
+}
+
+/* CTA Section */
+.cta-section {
+    color: var(--color-text);
+}
+
+.cta-section p {
+    color: var(--color-text-secondary);
+}
+
+/* Footer */
+.footer-links a {
+    color: var(--color-text-secondary);
+}
+
+.footer-links a:hover {
+    color: var(--color-text);
+}
+
+/* Ajustamos los hovers */
+.nav-links a:hover,
+.brand-button a:hover,
+.search-icon:hover,
+.search-close:hover {
+    color: #ff3b30;
 }
