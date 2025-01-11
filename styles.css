@@ -191,7 +191,7 @@ body,
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
     align-items: center;
     position: relative;
@@ -199,8 +199,7 @@ body,
 }
 
 .feature-showcase {
-    display: grid;
-    grid-template-areas: "image text";
+    grid-template-areas: "text image";
 }
 
 .feature-text {
@@ -231,12 +230,11 @@ body,
 
 .feature-image {
     position: relative;
-    transform: perspective(1000px) rotateY(-15deg);
-    transition: all 0.5s ease;
 }
 
 .feature-image:hover {
-    transform: perspective(1000px) rotateY(0deg) translateY(-20px);
+    /* Eliminamos esta propiedad:
+    transform: perspective(1000px) rotateY(0deg) translateY(-20px); */
 }
 
 .feature-image img {
@@ -244,15 +242,15 @@ body,
     border-radius: 20px;
     object-fit: cover;
     object-position: center;
-    transform: scale(1.1);
-    max-width: 800px;
+    transform: scale(1.4);
+    max-width: 600px;
     margin: 0 auto;
     display: block;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .feature-image:hover img {
-    transform: scale(1.15);
+    transform: scale(1.45);
 }
 
 .testimonials {
