@@ -508,14 +508,13 @@ footer {
 .search-icon {
     background: none;
     border: none;
-    color: #f5f5f7;
+    color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     padding: 0.6rem;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1003;
     opacity: 1;
-    transition: opacity 0.3s ease;
 }
 
 .search-icon:hover {
@@ -545,7 +544,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 95%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-radius: 25px;
@@ -580,6 +579,10 @@ footer {
 
 .search-input::placeholder {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+    color: #f5f5f7;
 }
 
 .search-button.active .search-container {
@@ -630,7 +633,7 @@ footer {
 .search-close {
     background: none;
     border: none;
-    color: #f5f5f7;
+    color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     padding: 0.6rem;
     transition: all 0.3s ease;
@@ -959,4 +962,25 @@ nav a,
 
 .nav-scrolled .nav-separator {
     background-color: rgba(255, 255, 255, 0.3); /* Color claro al hacer scroll */
+}
+
+/* Buscador cuando se hace scroll */
+.nav-scrolled .search-icon {
+    color: #f5f5f7; /* Color claro al hacer scroll */
+}
+
+/* Botón de cerrar cuando se hace scroll */
+.nav-scrolled .search-close {
+    color: #f5f5f7; /* Color claro al hacer scroll */
+}
+
+/* Estado con scroll - mantiene el color claro */
+.nav-scrolled .search-icon,
+.nav-scrolled .search-close {
+    color: #f5f5f7;
+}
+
+/* Fondo del buscador cuando se hace scroll (más claro) */
+.nav-scrolled .search-background {
+    background-color: rgba(0, 0, 0, 0.5); /* Más claro cuando hay scroll */
 }
