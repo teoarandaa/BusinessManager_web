@@ -959,6 +959,16 @@ footer {
     text-align: center;
 }
 
+/* Ajuste específico para "Always Free" */
+.discount:contains("Always Free") {
+    width: 95px;
+}
+
+/* Alternativa en caso de que :contains no funcione en todos los navegadores */
+.plan-card:first-child .discount {
+    width: 95px;
+}
+
 .plan-features {
     list-style: none;
     margin: 2rem 0;
