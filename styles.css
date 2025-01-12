@@ -613,6 +613,9 @@ footer {
     position: relative;
     border: none;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .plan-card.featured {
@@ -645,6 +648,7 @@ footer {
     margin: 2rem 0;
     padding: 0;
     text-align: left;
+    flex-grow: 1;
 }
 
 .plan-features li {
@@ -667,6 +671,7 @@ footer {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
+    margin-top: auto;
 }
 
 .plan-cta:hover {
@@ -926,4 +931,53 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+.yearly-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.yearly-price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+}
+
+.discount {
+    font-size: 14px;
+    color: #ff0000;
+    font-weight: 500;
+    margin: 0 auto 2rem;
+    padding: 4px 4px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 12px;
+    display: block;
+    width: 90px;
+    text-align: center;
+}
+
+.plan-features {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    text-align: left;
+}
+
+.plan-features li {
+    padding: 1rem 0;
+    color: var(--color-text-secondary);
+    font-size: 17px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.plan-features li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #ff0000;
+    font-weight: bold;
 }
