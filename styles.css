@@ -158,9 +158,10 @@ body,
 
 .feature-item img {
     width: 64px;
-    height: 64px;
+    height: auto;
     margin-bottom: 2rem;
     transition: all 0.3s ease;
+    object-fit: contain;
 }
 
 .feature-item:hover img {
@@ -915,4 +916,14 @@ footer {
     60% {
         transform: translateY(-4px) rotate(45deg);
     }
+}
+
+/* Si necesitamos un contenedor de tamaño fijo para la imagen */
+.feature-item .img-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
