@@ -1870,3 +1870,20 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .hero-image img,
+    .feature-overview-image img {
+        width: 120%;
+        max-width: 120%;
+        margin-left: -10%;
+        height: auto;
+    }
+
+    .hero-image,
+    .feature-overview-image {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+}
