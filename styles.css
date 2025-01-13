@@ -199,7 +199,7 @@ body,
     align-items: center;
     position: relative;
     padding: 2rem;
-    grid-template-areas: "image text";
+    grid-template-areas: "text image";
 }
 
 .feature-text {
@@ -409,8 +409,8 @@ footer {
     .feature-showcase {
         grid-template-columns: 1fr;
         grid-template-areas: 
-            "image"
-            "text";
+            "text"
+            "image";
         text-align: center;
         gap: 4rem;
     }
