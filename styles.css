@@ -2144,3 +2144,83 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+/* Privacy Styles */
+.privacy-detail {
+    padding: 8rem 2rem 4rem;
+    background: var(--color-white);
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.privacy-intro {
+    color: var(--color-text-light);
+    margin-bottom: 3rem;
+}
+
+.privacy-section {
+    margin-bottom: 2rem;
+}
+
+.privacy-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.privacy-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.privacy-section a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.privacy-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .privacy-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Email link styles */
+.terms-section a[href^="mailto:"],
+.privacy-section a[href^="mailto:"] {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.terms-section a[href^="mailto:"]:hover,
+.privacy-section a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
+/* Unificar los estilos base de enlaces en ambas secciones */
+.terms-section a,
+.privacy-section a {
+    text-decoration: none;
+}
+
+.terms-section a:hover,
+.privacy-section a:hover {
+    text-decoration: underline;
+}
