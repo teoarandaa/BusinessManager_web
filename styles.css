@@ -1874,10 +1874,10 @@ footer {
 @media screen and (max-width: 768px) {
     .hero-image img,
     .feature-overview-image img {
-        width: 200%;
-        max-width: 200%;
-        margin-left: -50%;
+        width: 100%;
         height: auto;
+        transform-origin: center;
+        transform: scale(1.5);
     }
 
     .hero-image,
@@ -1892,8 +1892,6 @@ footer {
 @media screen and (max-width: 480px) {
     .hero-image img,
     .feature-overview-image img {
-        width: 250%;
-        max-width: 250%;
-        margin-left: -75%;
+        transform: scale(2);
     }
 }
