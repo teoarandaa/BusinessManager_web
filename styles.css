@@ -1877,7 +1877,7 @@ footer {
     .hero-image img,
     .feature-overview-image img,
     .feature-image img {
-        height: 600px;
+        height: 500px;
     }
 }
 
@@ -1885,7 +1885,7 @@ footer {
     .hero-image img,
     .feature-overview-image img,
     .feature-image img {
-        height: 550px;
+        height: 500px;
     }
 }
 
