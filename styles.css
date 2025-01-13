@@ -348,12 +348,20 @@ body,
 }
 
 .cta-button {
-    padding: 1rem 2.5rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff3b30;
+    color: white;
+    text-decoration: none;
     border-radius: 30px;
-    font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    text-decoration: none;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #ff2d20;
 }
 
 .cta-button:not(.secondary) {
@@ -1916,5 +1924,155 @@ footer {
     .feature-overview-image img,
     .feature-image img {
         height: 425px;
+    }
+}
+
+/* Guide Styles */
+.guide-detail {
+    padding: 8rem 2rem 4rem;
+    background: var(--color-white);
+}
+
+.guide-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.guide-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.guide-intro {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 3rem;
+}
+
+.guide-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.guide-section {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.guide-section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+}
+
+.guide-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.guide-step {
+    margin-bottom: 2rem;
+}
+
+.guide-step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.guide-step p {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.guide-step ul,
+.guide-step ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.guide-step li {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.guide-footer {
+    position: relative;
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.guide-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+}
+
+.guide-cta-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.guide-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff3b30;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.guide-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #ff2d20;
+}
+
+.guide-cta.secondary {
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+}
+
+.guide-cta.secondary:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .guide-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .guide-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .guide-step h3 {
+        font-size: 1.3rem;
+    }
+
+    .guide-cta-container {
+        flex-direction: column;
     }
 }
