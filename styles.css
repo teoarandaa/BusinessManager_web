@@ -194,17 +194,18 @@ body,
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
     align-items: center;
     position: relative;
     padding: 2rem;
-    grid-template-areas: "text image";
+    grid-template-areas: "image text";
 }
 
 .feature-text {
     grid-area: text;
     text-align: left;
+    max-width: 100%;
 }
 
 .feature-image {
@@ -413,10 +414,25 @@ footer {
             "image";
         text-align: center;
         gap: 4rem;
+        padding: 2rem 1rem;
     }
     
-    .feature-text p {
-        margin: 0 auto 3rem;
+    .feature-text,
+    .feature-overview-content {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .feature-text h2,
+    .feature-overview-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .feature-text p,
+    .feature-overview-content p {
+        font-size: 1.1rem;
+        margin: 0 auto;
     }
 }
 
@@ -437,8 +453,14 @@ footer {
         font-size: 3rem;
     }
     
-    .feature-text h2 {
-        font-size: 3rem;
+    .feature-text h2,
+    .feature-overview-content h2 {
+        font-size: 2rem;
+    }
+    
+    .feature-text p,
+    .feature-overview-content p {
+        font-size: 1rem;
     }
     
     .footer-content {
