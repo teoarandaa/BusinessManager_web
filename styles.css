@@ -2224,3 +2224,8 @@ footer {
 .privacy-section a:hover {
     text-decoration: underline;
 }
+
+.section-title {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
