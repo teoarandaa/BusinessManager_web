@@ -387,16 +387,16 @@ footer {
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
 
 .footer-links {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .footer-links a {
@@ -407,6 +407,12 @@ footer {
 
 .footer-links a:hover {
     color: var(--color-text);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 /* Media Queries */
@@ -2228,4 +2234,21 @@ footer {
 .section-title {
     margin-bottom: 2.5rem;
     position: relative;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
 }
